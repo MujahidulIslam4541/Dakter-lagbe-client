@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import navImage from "@/public/images/nav.png";
+// import image  from "@/public/images/Vector.png"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -16,10 +17,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#07332F] shadow-lg fixed top-0 left-0 w-full z-50 text-white ">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+    <nav className="bg-[#07332F]  fixed top-0 left-0 w-full z-50 text-white ">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-32 py-3">
         {/* Logo + Brand Name */}
         <div className="flex items-center gap-2">
+
+          {/* <Image
+            src={image}
+            alt="Dakter-lagbe Logo"
+
+          /> */}
           <Image
             src={navImage}
             alt="Dakter-lagbe Logo"

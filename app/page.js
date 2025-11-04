@@ -1,8 +1,12 @@
+import React from 'react'
+import Banner from './pages/Banner/page'
+import OurService from './pages/Service/page'
 
 const Home = () => {
   return (
     <div>
-      <h2 className="text-2xl text-red-600  mt-20">kjehkjrhhhhhhhhtrgtret</h2>
+      <Banner></Banner>
+      <OurService></OurService>
     </div>
   )
 }
