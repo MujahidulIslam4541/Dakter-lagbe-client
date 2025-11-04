@@ -6,20 +6,20 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="w-full h-lvh bg-[#07332F] text-white px-10">
+    <div className=" relative w-full h-full md:h-lvh bg-[#07332F] text-white px-10">
       <div className="grid  grid-cols-1 md:grid-cols-2 ">
         {/* left side */}
         <div className="col-span-1">
-          <h2 className="text-4xl font-bold">Your Best Medical Help Center</h2>
-          <Image src={image7} alt="image"></Image>
+          <h2 className=" text-4xl lg:text-6xl font-bold relative pt-20">Your Best Medical <br /> Help Center</h2>
+          <Image src={image7} alt="image" className="absolute left-96 top-20 w-60 h-60"></Image>
           <p>Lorem Ipsum is simply dummy text they are printing typesetting has been the industry’s stardard.</p>
           <button>All Service</button>
-<Image src={image6}  alt="images"></Image>
         </div>
 
         {/* right side */}
-        <div className="  col-span-1">
+        <div className="  col-span-1 relative">
           <Image src={groupImage} alt="banner image"></Image>
+          <Image src={image6} alt="images" className="absolute  bottom-6 -left-32"></Image>
         </div>
       </div>
     </div>
