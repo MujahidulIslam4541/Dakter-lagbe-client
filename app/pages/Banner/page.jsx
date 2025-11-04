@@ -18,7 +18,7 @@ const Banner = () => {
 
         {/* right side */}
         <div className="  col-span-1 relative">
-          <Image src={groupImage} alt="banner image"></Image>
+          <Image src={groupImage} alt="banner image" ></Image>
           <Image src={image6} alt="images" className="absolute  bottom-6 -left-32"></Image>
         </div>
       </div>
