@@ -1,7 +1,10 @@
-import Image from "next/image";
 
-export default function Home() {
+const Home = () => {
   return (
-<h2 className="text-2xl font-bold text-red-500">Dakter lagbe</h2>
-  );
+    <div>
+      <h2 className="text-2xl text-red-600  mt-20">kjehkjrhhhhhhhhtrgtret</h2>
+    </div>
+  )
 }
+
+export default Home

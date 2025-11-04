@@ -11,12 +11,12 @@ const Navbar = () => {
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Apartment", path: "/apartment" },
+    { name: "Appointment", path: "/appointment" },
     { name: "Sign In", path: "/signIn" },
   ];
 
   return (
-    <nav className="bg-[#07332F] shadow-lg fixed top-0 left-0 w-full z-50 text-white">
+    <nav className="bg-[#07332F] shadow-lg fixed top-0 left-0 w-full z-50 text-white ">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         {/* Logo + Brand Name */}
         <div className="flex items-center gap-2">
