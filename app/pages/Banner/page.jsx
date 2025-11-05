@@ -7,7 +7,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <div className=" relative w-full h-full md:h-lvh bg-[#07332F] text-white px-10">
-      <div className="grid  grid-cols-1 md:grid-cols-2 ">
+      <div className="grid  grid-cols-1 md:grid-cols-2 gap-10">
         {/* left side */}
         <div className="col-span-1">
           <h2 className=" text-4xl lg:text-6xl font-bold relative pt-20">Your Best Medical <br /> Help Center</h2>
@@ -18,7 +18,7 @@ const Banner = () => {
 
         {/* right side */}
         <div className="  col-span-1 relative">
-          <Image src={groupImage} alt="banner image" ></Image>
+          <Image src={groupImage} alt="banner image"></Image>
           <Image src={image6} alt="images" className="absolute  bottom-6 -left-32"></Image>
         </div>
       </div>

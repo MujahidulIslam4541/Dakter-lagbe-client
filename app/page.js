@@ -4,6 +4,7 @@ import OurService from './pages/Service/page'
 import OurReviews from './pages/reviews/page'
 import OurDoctors from './pages/doctors/page'
 import ContactUs from './pages/contactUs/page'
+import Footer from './components/footer/page'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <OurReviews></OurReviews>
       <OurDoctors></OurDoctors>
       <ContactUs></ContactUs>
+      <Footer></Footer>
     </div>
   )
 }
