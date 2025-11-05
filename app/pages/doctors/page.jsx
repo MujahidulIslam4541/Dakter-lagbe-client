@@ -8,7 +8,7 @@ const OurDoctors = () => {
     <div className="max-w-7xl mx-auto mt-20">
       {/* heading */}
       <div className="text-center">
-        <h2>Our Exports Doctors</h2>
+        <h2 className="text-4xl font-bold">Our Exports Doctors</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis neque, amet, explicabo aut laboriosam
           sed ad mollitia provident distinctio, a ea quam reprehenderit illum ab vel labore natus tempore dolorem.
