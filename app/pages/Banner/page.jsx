@@ -1,3 +1,4 @@
+
 import React from "react";
 import groupImage from "@/public/images/Group8.png";
 import image7 from "@/public/images/Group7.png";
@@ -14,7 +15,7 @@ const Banner = () => {
           <Image src={image7} alt="image" className="absolute left-96 top-20 w-60 h-60"></Image>
           <p>Lorem Ipsum is simply dummy text they are printing typesetting has been the industry’s stardard.</p>
           <button>All Service</button>
-        </div>
+        </div
 
         {/* right side */}
         <div className="  col-span-1 relative">
