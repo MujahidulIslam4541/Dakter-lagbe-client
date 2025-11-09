@@ -1,83 +1,107 @@
-import AboutImage from "@/public/images/about.png";
 import Image from "next/image";
-import image from "@/public/images/Rectangle.png";
+import AboutImage from "@/public/images/about.png";
+import ServiceImage from "@/public/images/Rectangle.png";
 import { Clock8, MapPin, PhoneCall } from "lucide-react";
 
 const OurService = () => {
   return (
-    <div className="my-20 bg-white max-w-7xl mx-auto">
-      <div className=" grid  grid-cols-2 gap-6">
-        {/* lest side */}
-        <div className="col-span-1">
-          <Image src={AboutImage} alt="about image"></Image>
+    <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+      {/* Top Section */}
+      <div className="grid md:grid-cols-2 gap-10 items-center">
+        {/* Left Image */}
+        <div className="relative">
+          <Image
+            src={AboutImage}
+            alt="About us"
+            className="rounded-2xl shadow-lg w-full object-cover"
+          />
         </div>
 
-        {/* right side */}
-        <div className="col-span-1">
-          <h2>Our Service</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid labore eaque voluptatum veniam alias
-            libero laborum atque mollitia veritatis quisquam.
+        {/* Right Content */}
+        <div>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#07332F] mb-4">
+            Our Service
+          </h2>
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            We provide modern, professional, and affordable healthcare services
+            with top-notch medical professionals and advanced technology. Your
+            health and happiness are our priority.
           </p>
-          <div className="space-x-2  border-1 rounded-sm py-2 px-2 grid grid-cols-3">
-            {" "}
-            <button>Cavity Protection</button>
-            <button>Cavity Protection</button>
-            <button>Cavity Protection</button>
+
+          {/* Buttons */}
+          <div className="flex flex-wrap gap-3 mb-8">
+            {["Cavity Protection", "Cosmetic Dentistry", "Oral Surgery"].map(
+              (service, idx) => (
+                <button
+                  key={idx}
+                  className="px-4 py-2 text-sm rounded-full border border-[#f7a582] text-[#f7a582] hover:bg-[#f7a582] hover:text-white transition-all duration-300"
+                >
+                  {service}
+                </button>
+              )
+            )}
           </div>
 
-          <Image src={image} alt="image"></Image>
+          {/* Middle Image */}
+          <div className="rounded-xl overflow-hidden shadow-md mb-6">
+            <Image src={ServiceImage} alt="Service" className="w-full" />
+          </div>
 
-          <h2>Electro Gastrology Therapy</h2>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Sed ut perspiciatis unde omnis iste natus error{" "}
+          <h3 className="text-2xl font-semibold text-[#07332F] mb-3">
+            Electro Gastrology Therapy
+          </h3>
+          <p className="text-gray-600 mb-3 leading-relaxed">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Ea quae ab
+            illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.
           </p>
-          <p>
-            Sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore
-            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            Voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto.
           </p>
-          <button className="px-2 py-2 rounded border-amber-500 border">More Details</button>
+
+          <button className="px-5 py-2 bg-[#f7a582] text-white rounded-lg font-medium shadow hover:bg-[#e36c3f] transition-all duration-300">
+            More Details
+          </button>
         </div>
       </div>
 
-      {/* cart section */}
+      {/* Info Cards */}
+      <div className="grid md:grid-cols-3 gap-8 text-white mt-20">
+        {/* Card 1 */}
+        <div className="flex items-center gap-4 bg-[#07332F] p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <Clock8 className="w-10 h-10 text-[#f7a582]" />
+          <div>
+            <h4 className="text-lg font-semibold">Opening Hours</h4>
+            <p className="text-sm text-gray-200">
+              Open 9:00 AM to 5:00 PM Every Day
+            </p>
+          </div>
+        </div>
 
-      <div className="grid grid-cols-3 gap-8 text-white my-10">
-        {/* cart 1 */}
-        <div className="col-span-1 bg-[#07332F] rounded-2xl flex  gap-2">
+        {/* Card 2 */}
+        <div className="flex items-center gap-4 bg-[#f7a582] p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <MapPin className="w-10 h-10 text-white" />
           <div>
-            <Clock8 />
-          </div>
-          <div>
-            <h2>Opening Hour</h2>
-            <p>Open 9.00 am to 5.00 pm EveryDay</p>
-          </div>
-        </div>
-        {/* cart 2 */}
-        <div className="col-span-1 bg-[#f7a582] rounded-2xl flex  gap-2">
-          <div>
-            <MapPin />
-          </div>
-          <div>
-            <h2>Our Location</h2>
-            <p>Dhanmondi 17 Dhaka 1200  Bangladesh 1  </p>
+            <h4 className="text-lg font-semibold">Our Location</h4>
+            <p className="text-sm text-gray-100">
+              Dhanmondi 17, Dhaka 1200, Bangladesh
+            </p>
           </div>
         </div>
-        {/* cart 3 */}
-        <div className="col-span-1 bg-[#07332F] rounded-2xl flex  gap-2">
+
+        {/* Card 3 */}
+        <div className="flex items-center gap-4 bg-[#07332F] p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <PhoneCall className="w-10 h-10 text-[#f7a582]" />
           <div>
-            <PhoneCall />
-          </div>
-          <div>
-            <h2>Contact Us</h2>
-            <p>+8801800000025</p>
-            <p>+8801800000026</p>
+            <h4 className="text-lg font-semibold">Contact Us</h4>
+            <p className="text-sm text-gray-200">+8801800000025</p>
+            <p className="text-sm text-gray-200">+8801800000026</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
