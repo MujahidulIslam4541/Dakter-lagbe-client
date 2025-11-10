@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="relative w-full bg-[#07332F] text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-16 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    <div className="relative w-full h-full bg-[#07332F] text-white overflow-hidden md:h-lvh">
+      <div className="max-w-7xl mx-auto  px-6 py-16 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
 
         {/* Left side */}
         <div className="space-y-6 relative">
@@ -19,7 +19,7 @@ const Banner = () => {
           <Image
             src={image7}
             alt="decorative shape"
-            className="absolute hidden lg:block left-80 top-10 w-52 h-52 opacity-80"
+            className="absolute hidden lg:block md:left-80 md:top-10 w-52 h-52 opacity-80"
           />
 
           <p className="text-gray-200 text-base md:text-lg leading-relaxed max-w-md">
@@ -32,7 +32,7 @@ const Banner = () => {
         </div>
 
         {/* Right side */}
-        <div className="relative flex justify-center md:justify-end">
+        <div className="relative flex justify-center md:justify-end mt-10">
           <Image
             src={groupImage}
             alt="banner main image"
@@ -41,7 +41,7 @@ const Banner = () => {
           <Image
             src={image6}
             alt="decorative shape"
-            className="absolute bottom-0 -left-20 w-48 h-48 hidden md:block"
+            className="absolute bottom-0 left-12 w-16 h-28 hidden md:block"
           />
         </div>
 
