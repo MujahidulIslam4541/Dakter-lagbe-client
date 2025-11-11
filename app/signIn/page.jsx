@@ -20,7 +20,7 @@ const SignIn = () => {
       <div className="relative flex flex-col justify-center items-center bg-[#07332F] text-white overflow-hidden">
         {/* Top small image */}
         <div className="absolute top-8 right-8">
-          <Image src={topImage} alt="Top Decoration" className="w-[120px] md:w-40" />
+          <Image src={topImage} alt="Top Decoration" className="w-[120px] md:w-48" />
         </div>
 
         {/* Main image center */}
