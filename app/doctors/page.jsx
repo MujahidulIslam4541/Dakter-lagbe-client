@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const doctors = [
   {
-    id: 1,
+    id: '1',
     name: "Dr. Kareyan Anderson",
     degree: "MBBS, FCPS (Medicine)",
     image: doctor1,
@@ -21,7 +21,7 @@ const doctors = [
     fee: 20,
   },
   {
-    id: 2,
+    id: '2',
     name: "Dr. Ayesha Rahman",
     degree: "MBBS, MS (Cardiology)",
     image: doctor2,
@@ -31,7 +31,7 @@ const doctors = [
     fee: 25,
   },
   {
-    id: 3,
+    id: '3',
     name: "Dr. Tanvir Hasan",
     degree: "MBBS, MD (Neurology)",
     image: doctor3,

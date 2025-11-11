@@ -1,0 +1,298 @@
+[
+  {
+    "id": "1",
+    "name": "Dr. Kareyan Anderson",
+    "degree": "MBBS, FCPS (Medicine)",
+    "image": "doctor1.png",
+    "rating": 4.5,
+    "location": "Gulshan, Dhaka, Bangladesh",
+    "available": "Monday 22 November",
+    "fee": 20,
+    "about": "Dr. Kareyan Anderson is a compassionate and skilled physician dedicated to providing personalized care. With over 10 years of experience in internal medicine, she has helped countless patients live healthier lives.",
+    "services": [
+      "Tooth cleaning",
+      "Root Canal Therapy",
+      "Implants",
+      "Composite Bonding",
+      "Fissure Sealants",
+      "Surgical Extractions"
+    ],
+    "specializations": [
+      "Children Care",
+      "Dental Care",
+      "Oral and Maxillofacial Surgery",
+      "Orthodontist",
+      "Periodontist",
+      "Prosthodontics"
+    ],
+    "awards": [
+      {
+        "date": "July 2019",
+        "title": "Humanitarian Award",
+        "description": "Recognized for outstanding dedication to community service and patient care excellence."
+      },
+      {
+        "date": "March 2011",
+        "title": "Certificate for International Volunteer Service",
+        "description": "Awarded for medical missions and volunteer work in rural healthcare outreach programs."
+      }
+    ],
+    "education": [
+      {
+        "institution": "American Dental Medical University",
+        "degree": "BDS",
+        "years": "1998 - 2003"
+      },
+      {
+        "institution": "American Dental Medical University",
+        "degree": "MDS",
+        "years": "2003 - 2005"
+      }
+    ],
+    "experience": [
+      {
+        "workplace": "Glowing Smiles Family Dental Clinic",
+        "years": "2010 - Present (5 years)"
+      },
+      {
+        "workplace": "Comfort Care Dental Clinic",
+        "years": "2007 - 2010 (3 years)"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Dr. Ayesha Rahman",
+    "degree": "MBBS, MS (Cardiology)",
+    "image": "doctor2.png",
+    "rating": 4.8,
+    "location": "Dhanmondi, Dhaka, Bangladesh",
+    "available": "Tuesday 23 November",
+    "fee": 25,
+    "about": "Dr. Ayesha Rahman is a board-certified cardiologist with deep expertise in preventive and interventional cardiology. She focuses on patient education and lifestyle improvement.",
+    "services": [
+      "Cardiac Screening",
+      "Angioplasty",
+      "Echocardiogram",
+      "Stress Test",
+      "Heart Surgery Consultation"
+    ],
+    "specializations": [
+      "Cardiology",
+      "Heart Disease Prevention",
+      "Women’s Cardiac Health"
+    ],
+    "awards": [
+      {
+        "date": "June 2020",
+        "title": "Excellence in Cardiology",
+        "description": "Honored for exceptional patient outcomes and innovative treatment methods."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Dhaka Medical College",
+        "degree": "MBBS",
+        "years": "2005 - 2010"
+      },
+      {
+        "institution": "Bangabandhu Sheikh Mujib Medical University",
+        "degree": "MS (Cardiology)",
+        "years": "2011 - 2014"
+      }
+    ],
+    "experience": [
+      {
+        "workplace": "National Heart Foundation Hospital",
+        "years": "2015 - Present"
+      },
+      {
+        "workplace": "Labaid Cardiac Hospital",
+        "years": "2012 - 2015"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Dr. Tanvir Hasan",
+    "degree": "MBBS, MD (Neurology)",
+    "image": "doctor3.png",
+    "rating": 4.7,
+    "location": "Banani, Dhaka, Bangladesh",
+    "available": "Wednesday 24 November",
+    "fee": 22,
+    "about": "Dr. Tanvir Hasan is an experienced neurologist treating complex nervous system disorders. He has a patient-first approach and focuses on both diagnosis and rehabilitation.",
+    "services": [
+      "Neuro Consultation",
+      "Brain & Spine MRI Review",
+      "Epilepsy Management",
+      "Stroke Recovery Program"
+    ],
+    "specializations": [
+      "Neurology",
+      "Neurosurgery Consultation",
+      "Sleep Disorder Treatment"
+    ],
+    "awards": [
+      {
+        "date": "April 2018",
+        "title": "Best Neurology Research Award",
+        "description": "Recognized for groundbreaking study on early detection of stroke symptoms."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Sir Salimullah Medical College",
+        "degree": "MBBS",
+        "years": "2004 - 2009"
+      },
+      {
+        "institution": "BSMMU",
+        "degree": "MD (Neurology)",
+        "years": "2011 - 2015"
+      }
+    ],
+    "experience": [
+      {
+        "workplace": "United Hospital Dhaka",
+        "years": "2016 - Present"
+      },
+      {
+        "workplace": "Square Hospital",
+        "years": "2010 - 2015"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Dr. Nusrat Chowdhury",
+    "degree": "BDS, FCPS (Orthodontics)",
+    "image": "doctor4.png",
+    "rating": 4.6,
+    "location": "Uttara, Dhaka, Bangladesh",
+    "available": "Thursday 25 November",
+    "fee": 18,
+    "about": "Dr. Nusrat is a specialist orthodontist with over 8 years of experience in braces, aligners, and smile design treatments.",
+    "services": ["Braces", "Aligners", "Teeth Whitening", "Jaw Alignment"],
+    "specializations": ["Orthodontics", "Cosmetic Dentistry", "Children’s Braces"],
+    "awards": [
+      {
+        "date": "December 2021",
+        "title": "Best Orthodontist Award",
+        "description": "Recognized for excellence in orthodontic treatment and smile design."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Bangladesh Dental College",
+        "degree": "BDS",
+        "years": "2006 - 2011"
+      },
+      {
+        "institution": "Dhaka Dental College",
+        "degree": "FCPS (Orthodontics)",
+        "years": "2013 - 2016"
+      }
+    ],
+    "experience": [
+      {
+        "workplace": "Uttara Smile Studio",
+        "years": "2017 - Present"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Dr. Mahmud Hossain",
+    "degree": "MBBS, MS (ENT)",
+    "image": "doctor5.png",
+    "rating": 4.4,
+    "location": "Mirpur, Dhaka, Bangladesh",
+    "available": "Friday 26 November",
+    "fee": 19,
+    "about": "Dr. Mahmud Hossain specializes in ENT (Ear, Nose, Throat) and has successfully treated thousands of patients with hearing and sinus disorders.",
+    "services": [
+      "Ear Checkup",
+      "Sinus Surgery",
+      "Voice Disorder Therapy",
+      "Hearing Aid Fitting"
+    ],
+    "specializations": ["ENT", "Audiology", "Head and Neck Surgery"],
+    "awards": [
+      {
+        "date": "May 2017",
+        "title": "ENT Specialist of the Year",
+        "description": "Awarded for contribution to hearing disorder treatments."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Chittagong Medical College",
+        "degree": "MBBS",
+        "years": "2003 - 2009"
+      },
+      {
+        "institution": "BSMMU",
+        "degree": "MS (ENT)",
+        "years": "2011 - 2014"
+      }
+    ],
+    "experience": [
+      {
+        "workplace": "Popular Diagnostic Centre",
+        "years": "2015 - Present"
+      },
+      {
+        "workplace": "Apollo Hospitals Dhaka",
+        "years": "2010 - 2015"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Dr. Sabrina Islam",
+    "degree": "MBBS, FCPS (Gynecology)",
+    "image": "doctor6.png",
+    "rating": 4.9,
+    "location": "Bashundhara, Dhaka, Bangladesh",
+    "available": "Saturday 27 November",
+    "fee": 30,
+    "about": "Dr. Sabrina Islam is a senior gynecologist specializing in women’s reproductive health and pregnancy care with over 15 years of experience.",
+    "services": [
+      "Prenatal Care",
+      "Cesarean Section",
+      "Infertility Treatment",
+      "Postnatal Counseling"
+    ],
+    "specializations": ["Gynecology", "Obstetrics", "Women’s Health"],
+    "awards": [
+      {
+        "date": "October 2022",
+        "title": "Women’s Health Leadership Award",
+        "description": "Honored for leadership in maternal health improvement programs."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Rangpur Medical College",
+        "degree": "MBBS",
+        "years": "2002 - 2008"
+      },
+      {
+        "institution": "BSMMU",
+        "degree": "FCPS (Gynecology)",
+        "years": "2010 - 2014"
+      }
+    ],
+    "experience": [
+      {
+        "workplace": "Evercare Hospital Dhaka",
+        "years": "2015 - Present"
+      },
+      {
+        "workplace": "Dhaka Medical College Hospital",
+        "years": "2008 - 2015"
+      }
+    ]
+  }
+]
