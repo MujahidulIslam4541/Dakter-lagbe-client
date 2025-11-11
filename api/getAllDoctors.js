@@ -1,9 +1,5 @@
 export const getAllDoctors = async () => {
-  const result = fetch("https://jsonplaceholder.typicode.com/posts?_limit=20", {
-    next: {
-      revalidate: 10,
-    },
-  });
-
-  return (await result).json();
+  const res = await fetch("http://localhost:3000/doctors.json");
+  const data = await res.json();
+  return data;
 };
