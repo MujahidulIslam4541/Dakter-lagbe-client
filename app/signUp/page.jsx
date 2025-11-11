@@ -1,10 +1,15 @@
 "use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import signUpImage from "@/public/images/singUp.png";
 import topImage from "@/public/images/Frame.png";
 import Link from "next/link";
+import { Eye, EyeOff } from "lucide-react"; // 👁️ icons
 
 const SignUp = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -12,20 +17,17 @@ const SignUp = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    console.log("Email and password:", {name,userName,email,password});
- 
+    console.log("Form Data:", { name, userName, email, password });
   };
 
   return (
     <div className="grid min-h-screen grid-cols-1 md:grid-cols-2">
       {/* Left Side */}
       <div className="relative flex flex-col justify-center items-center bg-[#07332F] text-white overflow-hidden">
-        {/* Top small image */}
         <div className="absolute top-8 right-8">
           <Image src={topImage} alt="Top Decoration" className="w-[120px] md:w-48" />
         </div>
 
-        {/* Main image center */}
         <div className="flex justify-center items-center mt-20 md:mt-0">
           <Image
             src={signUpImage}
@@ -45,11 +47,9 @@ const SignUp = () => {
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Name */}
             <div className="flex flex-col">
-              <label className="mb-1 font-medium text-gray-700">
-                Name
-              </label>
+              <label className="mb-1 font-medium text-gray-700">Name</label>
               <input
-                type="name"
+                type="text"
                 name="name"
                 placeholder="Enter your Name"
                 required
@@ -57,25 +57,21 @@ const SignUp = () => {
               />
             </div>
 
-            {/* UserName */}
+            {/* Username */}
             <div className="flex flex-col">
-              <label className="mb-1 font-medium text-gray-700">
-                User Name
-              </label>
+              <label className="mb-1 font-medium text-gray-700">User Name</label>
               <input
-                type="name"
+                type="text"
                 name="userName"
-                placeholder="Enter your UserName"
+                placeholder="Enter your Username"
                 required
                 className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-[#f58e64]"
               />
             </div>
 
-            {/* email */}
+            {/* Email */}
             <div className="flex flex-col">
-              <label className="mb-1 font-medium text-gray-700">
-                E-mail
-              </label>
+              <label className="mb-1 font-medium text-gray-700">E-mail</label>
               <input
                 type="email"
                 name="email"
@@ -85,31 +81,39 @@ const SignUp = () => {
               />
             </div>
 
-
             {/* Password */}
-            <div className="flex flex-col">
+            <div className="flex flex-col relative">
               <label className="mb-1 font-medium text-gray-700">Password</label>
-              <input
-                type="password"
-                name="password"
-                placeholder="Enter your password"
-                required
-                className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-[#f58e64]"
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                  className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-[#f58e64] pr-10" 
+                />
+
+                {/* Eye icon */}
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-[#f58e64] z-10"
+                  tabIndex={-1} 
+                >
+                  {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                </button>
+              </div>
             </div>
 
             {/* Submit Button */}
-            <button
-              type="submit"
-              className="btn bg-[#f58e64] hover:bg-[#e1784c] text-white w-full mt-2"
-            >
-              Sign In
+            <button type="submit" className="btn bg-[#f58e64] hover:bg-[#e1784c] text-white w-full mt-2">
+              Sign Up
             </button>
           </form>
 
           {/* Bottom link */}
           <p className="text-center text-sm mt-5 text-gray-700">
-            Don’t have an account?{" "}
+            Already have an account?{" "}
             <Link href="/signIn" className="text-[#f58e64] font-semibold hover:underline">
               Sign In
             </Link>
