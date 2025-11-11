@@ -1,6 +1,4 @@
-"use client";
 
-import React, { useState } from "react";
 import Image from "next/image";
 import { MapPin, BookCheck, CircleDollarSign } from "lucide-react";
 import { Rating } from "@smastrom/react-rating";
@@ -9,6 +7,7 @@ import "@smastrom/react-rating/style.css";
 import doctor1 from "@/public/images/image2.png";
 import doctor2 from "@/public/images/image3.png";
 import doctor3 from "@/public/images/image4.png";
+import Link from "next/link";
 
 const doctors = [
   {
@@ -112,7 +111,7 @@ const OurDoctors = () => {
               </div>
 
               <button className="mt-5 w-full py-2 rounded-xl border border-[#f7a582] text-[#07332F] font-medium hover:bg-[#f7a582] hover:text-white transition-all duration-300">
-                View Details
+                <Link href={`/doctors/${doctor.id}`}>View Details</Link>
               </button>
             </div>
           </div>
