@@ -1,5 +1,5 @@
 
-// import Image from "next/image";
+import Image from "next/image";
 import { MapPin, BookCheck, CircleDollarSign } from "lucide-react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
@@ -31,12 +31,12 @@ const OurDoctors = async() => {
           >
             {/* Image */}
             <div className="relative w-full h-64">
-              {/* <Image
+              <Image
                 src={doctor.image}
                 alt={doctor.name}
                 fill
                 className="object-cover rounded-xl"
-              /> */}
+              />
             </div>
 
             {/* Info */}
