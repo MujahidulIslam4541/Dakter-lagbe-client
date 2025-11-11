@@ -1,22 +1,17 @@
-import React from 'react'
-import Banner from './pages/Banner/page'
-import OurService from './pages/Service/page'
-import OurReviews from './pages/reviews/page'
-import OurDoctors from './pages/doctors/page'
-import ContactUs from './pages/contactUs/page'
-import Footer from './components/footer/page'
+import Banner from "./pages/Banner/page";
+import OurService from "./pages/Service/page";
+import OurReviews from "./pages/reviews/page";
+import OurDoctors from "./pages/doctors/page";
+import ContactUs from "./pages/contactUs/page";
 
-const Home = () => {
+export default function Home() {
   return (
     <div>
-      <Banner></Banner>
-      <OurService></OurService>
-      <OurReviews></OurReviews>
-      <OurDoctors></OurDoctors>
-      <ContactUs></ContactUs>
-      <Footer></Footer>
+      <Banner />
+      <OurService />
+      <OurReviews />
+      <OurDoctors />
+      <ContactUs />
     </div>
-  )
+  );
 }
-
-export default Home

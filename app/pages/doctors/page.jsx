@@ -62,7 +62,7 @@ const OurDoctors = () => {
         {doctors.map((doctor) => (
           <div
             key={doctor.id}
-            className="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+            className="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden p-4"
           >
             {/* Image */}
             <div className="relative w-full h-64">
@@ -70,12 +70,12 @@ const OurDoctors = () => {
                 src={doctor.image}
                 alt={doctor.name}
                 fill
-                className="object-cover"
+                className="object-cover rounded-xl"
               />
             </div>
 
             {/* Info */}
-            <div className="p-6 flex flex-col gap-3">
+            <div className="flex flex-col gap-3 pt-6">
               <h3 className="text-2xl font-semibold text-[#07332F]">
                 {doctor.name}
               </h3>

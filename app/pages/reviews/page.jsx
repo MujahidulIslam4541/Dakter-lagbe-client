@@ -92,7 +92,7 @@ const OurReviews = () => {
               <Image
                 src={reviewImage}
                 alt="quote"
-                className="absolute top-6 right-6 w-10 h-10 opacity-25 select-none pointer-events-none"
+                className="absolute top-6 right-6 w-10 h-10 select-none pointer-events-none opacity-80 rounded"
               />
 
               {/* Profile Info */}

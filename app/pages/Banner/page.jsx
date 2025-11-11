@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-full bg-[#07332F] text-white overflow-hidden md:h-lvh">
-      <div className="max-w-7xl mx-auto  px-6 py-16 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    <div className="relative w-100% h-full bg-[#07332F] text-white overflow-hidden md:h-lvh">
+      <div className="max-w-7xl mx-auto  px-6 py-28 lg:py-16 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
 
         {/* Left side */}
         <div className="space-y-6 relative">
