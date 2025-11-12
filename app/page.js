@@ -1,17 +1,6 @@
-import Banner from "./pages/Banner/page";
-import OurService from "./pages/Service/page";
-import OurReviews from "./pages/reviews/page";
-import ContactUs from "./pages/contactUs/page";
-import OurDoctors from "./doctors/page";
+// app/page.js
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div>
-      <Banner />
-      <OurService />
-      <OurReviews />
-      <OurDoctors />
-      <ContactUs />
-    </div>
-  );
+  redirect("/main");
 }

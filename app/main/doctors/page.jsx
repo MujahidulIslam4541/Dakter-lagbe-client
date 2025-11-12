@@ -77,7 +77,7 @@ const OurDoctors = async() => {
               </div>
 
               <button className="mt-5 w-full py-2 rounded-xl border border-[#f7a582] text-[#07332F] font-medium hover:bg-[#f7a582] hover:text-white transition-all duration-300">
-                <Link href={`/doctors/${doctor.id}`}>View Details</Link>
+                <Link href={`/main/doctors/${doctor.id}`}>View Details</Link>
               </button>
             </div>
           </div>

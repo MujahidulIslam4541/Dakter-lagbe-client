@@ -114,7 +114,7 @@ const SignUp = () => {
           {/* Bottom link */}
           <p className="text-center text-sm mt-5 text-gray-700">
             Already have an account?{" "}
-            <Link href="/signIn" className="text-[#f58e64] font-semibold hover:underline">
+            <Link href="/auth/signIn" className="text-[#f58e64] font-semibold hover:underline">
               Sign In
             </Link>
           </p>
