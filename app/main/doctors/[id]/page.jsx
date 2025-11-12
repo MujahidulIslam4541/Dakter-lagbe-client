@@ -12,13 +12,6 @@ export default async function DoctorProfile({ params }) {
 
   const doctor = doctors.find((d) => d.id == id);
 
-  if (!doctor)
-    return (
-      <div className="mt-20 text-center text-xl font-semibold">
-        Doctor not found
-      </div>
-    );
-
   return (
     <div className="bg-gray-50">
       {/* Banner Section */}
