@@ -18,6 +18,17 @@ import "react-calendar/dist/Calendar.css";
 const Appointment = () => {
   const [date, setDate] = useState(new Date());
 
+  const services = [
+    { img: teethImage, title: "Teeth Orthodontics" ,id:1 },
+    { img: Flat, title: "Teeth Cleaning" ,id:2 },
+    { img: Group, title: "Cosmetic Dentistry",id:3 },
+    { img: Group23, title: "Teeth Whitening",id:4 },
+    { img: teethGroup, title: "Cavity Protection",id:5 },
+    { img: smile, title: "Pediatric Dental" ,id:6},
+    { img: teeth, title: "Oral Surgery",id:7 },
+    { img: teethImage, title: "Teeth Orthodontics",id:8 },
+  ];
+
   return (
     <div className="w-full bg-gray-50">
       {/* Banner Section */}
@@ -28,9 +39,7 @@ const Appointment = () => {
         </div>
 
         {/* Banner Title */}
-        <h2 className="text-white text-3xl md:text-4xl font-bold flex-1 text-center md:text-left">
-          Appointment
-        </h2>
+        <h2 className="text-white text-3xl md:text-4xl font-bold flex-1 text-center md:text-left">Appointment</h2>
 
         {/* Right Image */}
         <div className="w-24 md:w-32 h-24 md:h-32 relative mt-4 md:mt-0">
@@ -42,10 +51,8 @@ const Appointment = () => {
         {/* Calendar + Chair Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Calendar */}
-          <div className="bg-white p-8 rounded-3xl border border-gray-200">
-            <h3 className="text-2xl font-semibold mb-6 text-gray-800">
-              Select Your Appointment Date
-            </h3>
+          <div className=" p-8 rounded-3xl ">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800">Select Your Appointment Date</h3>
             <Calendar
               onChange={setDate}
               value={date}
@@ -61,26 +68,13 @@ const Appointment = () => {
 
         {/* Services Section */}
         <div className="mt-16 text-center">
-          <p className="text-orange-400 font-medium mb-2">
-            Available Services on {date.toDateString()}
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Please select a service
-          </h2>
+          <p className="text-orange-400 font-medium mb-2">Available Services on {date.toDateString()}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Please select a service</h2>
         </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
-          {[
-            { img: teethImage, title: "Teeth Orthodontics" },
-            { img: Flat, title: "Teeth Cleaning" },
-            { img: Group, title: "Cosmetic Dentistry" },
-            { img: Group23, title: "Teeth Whitening" },
-            { img: teethGroup, title: "Cavity Protection" },
-            { img: smile, title: "Pediatric Dental" },
-            { img: teeth, title: "Oral Surgery" },
-            { img: teethImage, title: "Teeth Orthodontics" },
-          ].map((service, idx) => (
+          {services.map((service, idx) => (
             <div
               key={idx}
               className="flex flex-col items-center bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 cursor-pointer"
@@ -98,7 +92,7 @@ const Appointment = () => {
       <style jsx global>{`
         .react-calendar {
           border: none;
-          font-family: 'Poppins', sans-serif;
+          font-family: "Poppins", sans-serif;
         }
         .react-calendar__month-view__weekdays {
           text-align: center;
