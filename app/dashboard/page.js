@@ -24,11 +24,7 @@ export default function DashboardLayout({ children }) {
         </div>
 
         <ul className="space-y-3">
-          <li>
-            <Link className="btn btn-sm w-full bg-white text-black" href="/dashboard">
-              Overview
-            </Link>
-          </li>
+
           <li>
             <Link className="btn btn-sm w-full bg-white text-black" href="/dashboard/myAppointment">
               My Appointments
