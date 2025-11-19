@@ -1,20 +1,20 @@
-import React from 'react'
-import Banner from '../pages/Banner/page'
-import OurService from '../pages/Service/page'
-import OurReviews from '../pages/reviews/page'
-import OurDoctors from './doctors/page'
-import ContactUs from '../pages/contactUs/page'
+import React from "react";
+import Banner from "../homePage/Banner/page";
+import OurService from "../homePage/Service/page";
+import OurReviews from "../homePage/reviews/page";
+import OurDoctors from "./doctors/page";
+import ContactUs from "../homePage/contactUs/page";
 
 const MainHome = () => {
   return (
     <div>
-            <Banner />
+      <Banner />
       <OurService />
       <OurReviews />
       <OurDoctors />
       <ContactUs />
     </div>
-  )
-}
+  );
+};
 
-export default MainHome
+export default MainHome;
