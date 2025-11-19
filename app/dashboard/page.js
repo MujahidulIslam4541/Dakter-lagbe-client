@@ -18,9 +18,9 @@ export default function DashboardLayout({ children }) {
       >
         <div className="flex  gap-2 pt-10 lg:pt-0 pb-10">
           <Image src={navImage} alt="Dakter-lagbe Logo" width={30} height={30} className="" />
-          <h1 className="text-2xl font-bold tracking-wide">
+          <Link href='/main' className="text-2xl font-bold tracking-wide">
             Dakter<span className="text-[#34D399]">-lagbe</span>
-          </h1>
+          </Link>
         </div>
 
         <ul className="space-y-3">
